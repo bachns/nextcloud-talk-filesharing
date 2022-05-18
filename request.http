@@ -1,0 +1,48 @@
+GET DOMAIN_NAME/ocs/v2.php/apps/spreed/api/v1/chat/66g5m2xn
+Content-Type: application/json
+Accept: application/json
+OCS-APIRequest: true
+Authorization: Basic bachns:123456
+
+{
+    "lookIntoFuture": 0,
+    "limit": 10
+}
+
+
+###
+
+DELETE DOMAIN_NAME/ocs/v2.php/apps/spreed/api/v1/chat/66g5m2xn/6302
+Content-Type: application/json
+Accept: application/json
+OCS-APIRequest: true
+Authorization: Basic bachns:123456
+
+
+
+### Get All shares
+
+GET DOMAIN_NAME/ocs/v2.php/apps/files_sharing/api/v1/shares
+Content-Type: application/json
+Accept: application/json
+OCS-APIRequest: true
+Authorization: Basic bachns:123456
+
+
+### Get shares from a specific file or folder
+
+GET DOMAIN_NAME/ocs/v2.php/apps/files_sharing/api/v1/shares
+    ?path=/Talk/111.jpeg
+Content-Type: application/json
+Accept: application/json
+OCS-APIRequest: true
+Authorization: Basic bachns:123456
+
+
+### Create a new Share
+
+POST DOMAIN_NAME/ocs/v2.php/apps/files_sharing/api/v1/shares?path=/Users/bachns/Public/myapi.jpeg&shareType=10
+Content-Type: application/json
+Accept: application/json
+OCS-APIRequest: true
+Authorization: Basic bachns:123456
